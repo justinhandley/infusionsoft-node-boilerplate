@@ -1,0 +1,12 @@
+# The following types define the data model of the example service
+# based on which the GraphQL API is generated
+
+type Infusionsoft @model {
+    accesstoken: String!
+    code: String!
+    expiresin: String!
+    id: ID! @isUnique
+    refreshtoken: String!
+    tokentype: String!
+}
+
