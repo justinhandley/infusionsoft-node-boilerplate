@@ -76,9 +76,15 @@ Under settings, copy the URL of the site you have deployed.
 
 I'm not going to help here - if you are trying to set up an API development tool you need to know how to find your API credentials.
 
-The Infusionsoft API for the app for XML-RPC uses the app name and API key from within the app.  For the REST API you need your developer key and secret.
+The Infusionsoft API for the app for XML-RPC uses the app name and API key from within the app.  This is due to one of the plugins we use to connect, however, we are working on modifying that plugin to also accept OAUTH Tokens.
+
+For the REST API you need your developer key and secret.
 
 Once you have all of this, go ahead and rename `.env.example` to `.env` fill in the .env file in this project, and also add each of the items in the `.env`
+
+### Getting Up and Running
+
+Once you have her graph.cool database up and your env variables configured and your app live on Heroku, go to http://sitename.herokuapp.com/infusion/auth.  This will take you through the authentication process.  You can then use a service like [EasyCron](http://easycron.com) to ping http://sitename.herokuapp.com/infusion/refresh every 8 or 12 hours to keep your token updated.  You can use whatever routes you want - we've set up a demo script in the `process` route that creates a test user.
 
 ### Help, Support, etc..
 
