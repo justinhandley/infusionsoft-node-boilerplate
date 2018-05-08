@@ -84,7 +84,7 @@ Once you have all of this, go ahead and rename `.env.example` to `.env` fill in 
 
 ### Getting Up and Running
 
-Once you have her graph.cool database up and your env variables configured and your app live on Heroku, go to http://sitename.herokuapp.com/infusion/auth.  This will take you through the authentication process.  You can then use a service like [EasyCron](http://easycron.com) to ping http://sitename.herokuapp.com/infusion/refresh every 8 or 12 hours to keep your token updated.  You can use whatever routes you want - we've set up a demo script in the `process` route that creates a test user.
+Once you have her graph.cool database up and your env variables configured and your app live on Heroku, go to http://sitename.herokuapp.com/infusion/auth.  This will take you through the authentication process.  You can then use a service like [EasyCron](http://easycron.com) to ping http://sitename.herokuapp.com/infusion/refresh every 8 or 12 hours to keep your token updated.  We also have a refresh task in bin, so if you want to set up Heroku Scheduler to run 'refresh' once an hour that should keep your token up to date. You can use whatever routes you want - we've set up a demo script in the `process` route that creates a test user.
 
 ### Help, Support, etc..
 
