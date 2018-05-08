@@ -1,0 +1,6 @@
+#!/usr/bin/env node
+
+const refresh = require('../src/components/refresh')
+
+refresh.refreshToken()
+.catch(e => console.log(e))  // eslint-disable-line no-console
