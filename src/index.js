@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use('/infusion', InfusionAuth)
 app.use('/process', Process)
 
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8081
 
 process.on('unhandledRejection', error => {
   console.log('unhandledRejection', error) // eslint-disable-line no-console
@@ -32,7 +32,9 @@ http
   global.token = await getToken()
   global.headers = getHeaders()
   // Configure Infusionsoft XML API as global 'infusionsoft'
-  global.infusionsoft = new api.DataContext(process.env.INFUSIONSOFT_APP, process.env.INFUSIONSOFT_APP_SECRET)
+  global.infusionsoft = new api.DataContext(global.token)
 
   console.log('Updated : Server listening at port %d', port) // eslint-disable-line no-console
 })
+
+
