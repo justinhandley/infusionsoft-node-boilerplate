@@ -2872,9 +2872,9 @@ inflight@^1.0.4:
     wrappy "1"
 
 infusionsoft-javascript-api@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/infusionsoft-javascript-api/-/infusionsoft-javascript-api-0.3.0.tgz#cad74dd836c9f35a7aa3243c985dd5f0bb5787e7"
-  integrity sha512-un9tx3UayAd0l45vVHzSZJFu9l7pia0sbOpgY3QyV36TXCiIFonrfo/t7fgJArcpnt5eSDyyYzIR6IRhHl1hyA==
+  version "0.3.1"
+  resolved "https://registry.yarnpkg.com/infusionsoft-javascript-api/-/infusionsoft-javascript-api-0.3.1.tgz#ac599b060288f7a7f9125edbb75b3f4b58f12ead"
+  integrity sha512-i4UsY878aNQ8+kgXBoW4/947eSJ36GnugmPx/4NKlaV2FdFHUW5WjIfbCSPH0T1WBe14Nv/dNcaWy3XgdLrPtQ==
   dependencies:
     inflection "~1.2.6"
     q "~0.9.6"
